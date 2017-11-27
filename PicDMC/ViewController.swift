@@ -10,6 +10,12 @@ import Photos
 import ForecastIO
 import CoreLocation
 
+extension UserDefaults {
+    var measure : String {
+        return UserDefaults().string(forKey: "user_measure") ?? ""
+    }
+}
+
 class ViewController: UIViewController, UINavigationControllerDelegate, CLLocationManagerDelegate {
     
     var havePushedImageVC = false
@@ -25,7 +31,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, CLLocati
     var pAddress : String = ""
     var pDistanceMiles : Double = 0.0
     
-    var measure = UserDefaults().string(forKey: "user_measure") ?? ""
+    var measure = UserDefaults.standard.measure
     var font_color = UserDefaults().string(forKey: "user_font_color") ?? ""
     
     @IBOutlet weak var imageView: UIImageView!
@@ -101,16 +107,21 @@ class ViewController: UIViewController, UINavigationControllerDelegate, CLLocati
                 
                 if pm.count > 0 {
                     let pm = placemarks![0]
-                    /*
+                    
                      print(pm.country)
                      print(pm.locality)
                      print(pm.subLocality)
                      print(pm.thoroughfare)
                      print(pm.postalCode)
                      print(pm.subThoroughfare)
-                    */
+ 
+                    
+                    
                     if pm.subLocality != nil {
                         address = address + pm.subLocality! + ", "
+                    }
+                    if pm.subThoroughfare != nil {
+                        address = address + pm.subThoroughfare! + " "
                     }
                     if pm.thoroughfare != nil {
                         address = address + pm.thoroughfare! + ", "
@@ -143,9 +154,11 @@ class ViewController: UIViewController, UINavigationControllerDelegate, CLLocati
             mapViewController.photoLongitude = picLong
             mapViewController.photoAddress = pAddress
             if (pDistanceMiles > 2000) {
-               mapViewController.photoSpan = 5.0
+               mapViewController.photoSpan = 2.0
+            } else if (pDistanceMiles > 10) {
+               mapViewController.photoSpan = 0.1
             } else {
-               mapViewController.photoSpan = 0.5
+               mapViewController.photoSpan = 0.01
             }
 
         }
@@ -165,7 +178,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, CLLocati
         let summary = (forecast.currently?.summary ?? "").lowercased()
         let coordinate0 = CLLocation(latitude: self.currentLatitude, longitude: self.currentLongitude)
         let coordinate1 = CLLocation(latitude: CLLocationDegrees(self.picLat), longitude: CLLocationDegrees(self.picLong))
-
+        print("lat : ", self.picLat)
+        print("long : ", self.picLong)
         self.getAddress(point: coordinate1) { (address:String?) in
             //print("address ", address ?? "")
             print(self.timeAtPlace(time: (forecast.currently?.time)!, timezone: forecast.timezone))
@@ -194,8 +208,9 @@ extension ViewController: UIImagePickerControllerDelegate {
         picLong = 0.0
         if let url = info["UIImagePickerControllerReferenceURL"] as? URL {
             let assets = PHAsset.fetchAssets(withALAssetURLs: [url], options: nil)
-            if let asset = assets.firstObject, let location = asset.location {
+            if let asset = assets.firstObject, let location = asset.location, let creationDate = asset.creationDate {
                 
+                print("creationDate : ", creationDate)
                 picLat = location.coordinate.latitude
                 picLong = location.coordinate.longitude
                 client.getForecast(latitude: picLat,
@@ -228,6 +243,7 @@ extension ViewController: UIImagePickerControllerDelegate {
         
         let distanceInMeters = point1.distance(from: point2)
         let distanceInMiles = distanceInMeters / 1609.344
+        pDistanceMiles = distanceInMiles
         
         //print("EXT distance from current location to picture location in meters : ", distanceInMeters)
         //print("EXT distance  in km : ", distanceInMeters/1000)
@@ -235,7 +251,9 @@ extension ViewController: UIImagePickerControllerDelegate {
         
         if (measure == "metric") {
             if (distanceInMeters < 1000) {
-                distanceString = "distance \(distanceInMeters) meters"
+                print("meters: ", distanceInMeters)
+                let intMDistance = Int(round(distanceInMeters))
+                distanceString = "distance \(intMDistance) meters"
             } else {
                 let intKmDistance = Int(round(distanceInMeters / 1000))
                 distanceString = "distance \(intKmDistance) km"
@@ -249,6 +267,7 @@ extension ViewController: UIImagePickerControllerDelegate {
                 distanceString = "distance \(intMileDistance) miles"
             }
         }
+
         return distanceString
     }
     

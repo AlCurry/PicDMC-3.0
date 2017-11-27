@@ -8,15 +8,19 @@
 
 import UIKit
 
-class PhotoViewController: UIViewController  {
+class PhotoViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     var picImage: UIImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.scrollView.minimumZoomScale = 1.0
+        self.scrollView.maximumZoomScale = 6.0
+        
         imageView.image = picImage
 
     }
@@ -26,4 +30,7 @@ class PhotoViewController: UIViewController  {
         // Dispose of any resources that can be recreated.
     }
 
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return self.imageView
+    }
 }

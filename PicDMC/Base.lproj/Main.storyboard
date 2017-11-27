@@ -160,20 +160,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R06-MO-XmI">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lL5-FY-Ibe">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                            </imageView>
+                                <subviews>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7IY-TP-SCw">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7IY-TP-SCw" firstAttribute="centerX" secondItem="lL5-FY-Ibe" secondAttribute="centerX" id="0jj-YD-149"/>
+                                    <constraint firstAttribute="trailing" secondItem="7IY-TP-SCw" secondAttribute="trailing" id="NTC-t7-gk3"/>
+                                    <constraint firstAttribute="bottom" secondItem="7IY-TP-SCw" secondAttribute="bottom" id="QJM-Ge-6JP"/>
+                                    <constraint firstItem="7IY-TP-SCw" firstAttribute="centerY" secondItem="lL5-FY-Ibe" secondAttribute="centerY" id="b1u-Ng-htk"/>
+                                    <constraint firstItem="7IY-TP-SCw" firstAttribute="leading" secondItem="lL5-FY-Ibe" secondAttribute="leading" id="s53-I9-0Ce"/>
+                                    <constraint firstItem="7IY-TP-SCw" firstAttribute="top" secondItem="lL5-FY-Ibe" secondAttribute="top" id="sBc-WN-CMA"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="nMU-hQ-JFr" id="TJd-UZ-OAJ"/>
+                                </connections>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
-                            <constraint firstItem="R06-MO-XmI" firstAttribute="leading" secondItem="75d-Uh-T8U" secondAttribute="leading" id="EdP-zV-ZQm"/>
-                            <constraint firstItem="R06-MO-XmI" firstAttribute="top" secondItem="S4z-Tb-lwQ" secondAttribute="bottom" id="L1c-yO-0Om"/>
-                            <constraint firstAttribute="trailing" secondItem="R06-MO-XmI" secondAttribute="trailing" id="SyS-nQ-Fra"/>
-                            <constraint firstItem="yGO-rw-exB" firstAttribute="top" secondItem="R06-MO-XmI" secondAttribute="bottom" id="gUl-Be-2z8"/>
+                            <constraint firstAttribute="trailing" secondItem="lL5-FY-Ibe" secondAttribute="trailing" id="KLz-U5-38S"/>
+                            <constraint firstItem="lL5-FY-Ibe" firstAttribute="leading" secondItem="75d-Uh-T8U" secondAttribute="leading" id="OIn-V3-Zo0"/>
+                            <constraint firstItem="lL5-FY-Ibe" firstAttribute="top" secondItem="S4z-Tb-lwQ" secondAttribute="bottom" id="Vdp-C8-LIH"/>
+                            <constraint firstItem="yGO-rw-exB" firstAttribute="top" secondItem="lL5-FY-Ibe" secondAttribute="bottom" id="qo0-gF-e2u"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="R06-MO-XmI" id="bnb-20-VLm"/>
+                        <outlet property="imageView" destination="7IY-TP-SCw" id="Mco-XY-PDB"/>
+                        <outlet property="scrollView" destination="lL5-FY-Ibe" id="VOL-gY-H3d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mDF-AX-xr8" userLabel="First Responder" sceneMemberID="firstResponder"/>
