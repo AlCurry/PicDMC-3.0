@@ -7,71 +7,198 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		019D66AFEC4B101680E5872B874212E9 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6902705D11E7B858D13940CBD8B4FD /* Result.swift */; };
-		037B6B0906551177C872293BB9412D34 /* Pods-PicDMC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15AE7C32ED6F9B902B509E1018C59D20 /* Pods-PicDMC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2AE59BE130AD1576163B169B7CFCA55D /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DB504AB8A9BB7EFF6C5DBE5587E4F8 /* Flag.swift */; };
-		333906F71F29BCAC86DE1E714928744D /* ForecastIO-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3607351BF7AE99FADCD74B66E195D19 /* ForecastIO-dummy.m */; };
-		4D28B2C2D41AA509839523EA019B7BDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		601F1B1C8DFA1E08F4DB3002EC888F82 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = C531BFD697DD449A65ECF896F71FAC09 /* Language.swift */; };
-		62D6A90AB568011348B4081CAC4C0DC8 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5425878C620F423582EAAF95112D3106 /* Units.swift */; };
-		7DC301C41FAEFF5F05F10C6352FD73DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		7FD87C63182D24135F437AF974F8E4B4 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27742FAA7A8F6B2ACE859A1D6FA2072 /* DataPoint.swift */; };
-		81851667331B1DF6174A558047BE1BEA /* ForecastIOError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B448DB0F005946D23B80C24251590FCA /* ForecastIOError.swift */; };
-		88D7419E7DF8410EBFAAD323562FD913 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F46572221E8D841270774FE81EBE8E5 /* Alert.swift */; };
-		901B537C50A75ED7D31FE2EA33F5659B /* ForecastIO-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D1703D9031689C17F26344C239FDF5 /* ForecastIO-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A60B653328DD9B1BB86F1E9A8F26D09B /* Pods-PicDMC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8835C19CBC691F0E7C2B09F9CB46198 /* Pods-PicDMC-dummy.m */; };
-		B5DA9DAF5453FC8FC2683C2C56C4E0BE /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E145886EFD7D671FA2580E8AB94D135E /* Icon.swift */; };
-		B7E25CFE205E1A00AB0A0614EE719B62 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07A8115FAEB63C3AA42F246481865E0 /* Forecast.swift */; };
-		BD999B497F81FE4133BF13323869B10D /* DataBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699F7AE1982B6D2FE1B9C1A9C41FD479 /* DataBlock.swift */; };
-		CFE641BFC14E301E1EE7C91A20DE362D /* Precipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856CEBDD434EA4F898D236A38C3052CE /* Precipitation.swift */; };
-		D588523B80B0D43F19BE9E3AC2A2F688 /* RequestMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D37E06F51A26365713A950B23EF9558 /* RequestMetadata.swift */; };
-		D7C4EB2DB6A5054C1CFB63922FDD022A /* DarkSkyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE83C53E4A09349A5AC3D70DF3B34A8 /* DarkSkyClient.swift */; };
+		019D66AFEC4B101680E5872B874212E9 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BF7CAE15ED5A6E6ABD9A8945A1C507 /* Result.swift */; };
+		1640FC74A0ACE1D703B9A7738860A064 /* InAppSettingsKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A33821AB2BE20EE97128CBD1F47FCE /* InAppSettingsKit-dummy.m */; };
+		16F437159F45F56E5CE4B9911233EBEB /* IASKTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B4D910DA9F0D9AD9C760E18212D1E65 /* IASKTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2167E358A52FE1C105E8FD39A51498D7 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 844EE918CC87C2D541657CB3AC770484 /* Base.lproj */; };
+		2367272FB729F671F3842C6FA7C390ED /* IASKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD54BE314DB0CD74DE8FB1A5F0CFE686 /* IASKTextView.m */; };
+		24337B11FE4ED1EB684AA97F860C6F12 /* IASKSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 58758F61377375AC25D73545BD1C4B0D /* IASKSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AE59BE130AD1576163B169B7CFCA55D /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB4C13F76435C442F7BDBD2CEDEC324 /* Flag.swift */; };
+		2CE19EB59E7F5B2A8EEBEB7A5EA126A2 /* tr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9E8C189AA32F71994A44E20E2067712A /* tr.lproj */; };
+		2D7D03048DBFF4379F7D011925B2FEF4 /* IASKTextViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 14FC167E4C60A6FC8B93D87F2599C88C /* IASKTextViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		333906F71F29BCAC86DE1E714928744D /* ForecastIO-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 478B069ED5D63C92CF33D6C8FA94E788 /* ForecastIO-dummy.m */; };
+		381A429E9CC6979A1CDF662742C62475 /* IASKMultipleValueSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = D38EBFFB4F4E94A2F1C513684BE34BFB /* IASKMultipleValueSelection.m */; };
+		3A092E87C33AEFE16AA5784AC08BA9E9 /* th.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E8F8818ED18799263B4962AC2142230B /* th.lproj */; };
+		419CAA9405DD3DE29BD3278A9B54DB99 /* IASKViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E182D33B8313E6E57F1CADEE66FCA63 /* IASKViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42FE84DA02ED5089A5126BEF584B4CB1 /* IASKTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 68889B61B7377E519BEA02F17794453B /* IASKTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4998C73670492A5B49463B947B65C9B8 /* el.lproj in Resources */ = {isa = PBXBuildFile; fileRef = EBFD10AAA8C7D24B41445DA8F5F711EF /* el.lproj */; };
+		4D210E159BFB94B43BA1DEF818697047 /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 781FCFF1978CC79DD037CFD93C00E5FF /* ja.lproj */; };
+		4D28B2C2D41AA509839523EA019B7BDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D8132F9DC617E978F59BF7226AC88A /* Foundation.framework */; };
+		4FEC172D08025B1FF32ECEAF3E58FC2C /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5E341748938A8EA9A6C4E31EB559E577 /* en.lproj */; };
+		538E3D762166B71A00202E68057991DA /* IASKAppSettingsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A55E6ACEFBF29615775E0876C77EB33 /* IASKAppSettingsWebViewController.m */; };
+		551267314E4B8236E9166BB48BE68B36 /* IASKPSSliderSpecifierViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 228A729862735CC63DF9AE00549D2FB3 /* IASKPSSliderSpecifierViewCell.m */; };
+		5522CC4F310DC2DD0C7498E99A659568 /* nl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 74EBB9049470CCB6A29E4AD2D2CBDC3F /* nl.lproj */; };
+		601F1B1C8DFA1E08F4DB3002EC888F82 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E6D8E9D9005BBDAADF95530058B32 /* Language.swift */; };
+		6156D7694F10E0ED2212E94CC346B4F8 /* pt-PT.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 3F2AD07C95147E9C3ADED76A37038FE7 /* pt-PT.lproj */; };
+		62D6A90AB568011348B4081CAC4C0DC8 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EC78DA6C964E6D7FD2A2F7594935EC /* Units.swift */; };
+		6315ADF2F7932752D872413E2C38603D /* IASKSettingsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 7129DE0868349447471B5BDA394A1235 /* IASKSettingsStore.m */; };
+		65ACE282418027E1EAC0F5BBCD97EC63 /* InAppSettingsKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B30D102FDACD0233B08A930BCCB65618 /* InAppSettingsKit.bundle */; };
+		661D7B9E41755FE4FB983FE783A7F881 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D8132F9DC617E978F59BF7226AC88A /* Foundation.framework */; };
+		6622595A38D22163D16FB5015136080D /* InAppSettingsKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6D496970C635A6B046620066A1424E2 /* InAppSettingsKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66CC8DB497CFF35475C0BD0A0C6268B2 /* IASKSettingsStoreFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D281628AA4737E820702CF80CC898BAD /* IASKSettingsStoreFile.m */; };
+		6BE3ACBCC4160CA4AE1448CA1089DF32 /* IASKPSTextFieldSpecifierViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BE012702488A1A63D02E1376BEDBC37 /* IASKPSTextFieldSpecifierViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DFA183CD1FFCFABEDE86006238C03BC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC9DFE70A35B1C9D56C07C8E27586F5 /* MessageUI.framework */; };
+		6E86A53D9E226CD6427ED079F66E6915 /* IASKPSSliderSpecifierViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = C527C9BC42523050F919FB33F6502FCF /* IASKPSSliderSpecifierViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FD57A9390734BFB0949417ECCCB7AEC /* sv.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 411A4C520422BF4DC020F1B31F1A1C77 /* sv.lproj */; };
+		703A72D55C393C7FFEE4744F46A9C144 /* IASKSettingsStoreUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C7FEE2FB9EDEA66292ED76D96C00286 /* IASKSettingsStoreUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72109CC4E319106450B8B2E62A7023E3 /* IASKSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C411920433CDAE85C351CF0B16F3AF /* IASKSwitch.m */; };
+		72A0AAEF5DFC21535D630C3185726ABD /* IASKSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = A74B22197D14DFE24DDBA9DEB576D93F /* IASKSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7FD87C63182D24135F437AF974F8E4B4 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F60D7B09404FF41D6ABD9E969C1E30 /* DataPoint.swift */; };
+		81851667331B1DF6174A558047BE1BEA /* ForecastIOError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6AA79B644543F38E76177E19BB20AC /* ForecastIOError.swift */; };
+		84CF25B1937F8F0419B1648EE39227A5 /* IASKSpecifierValuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3ED3B9A3DB90BF979D70F3D6B45878 /* IASKSpecifierValuesViewController.m */; };
+		88882F4E2DECC41B49087098118FF0D3 /* pt.lproj in Resources */ = {isa = PBXBuildFile; fileRef = EBB2B767BCAA54D92B174D7BEFD60849 /* pt.lproj */; };
+		88D7419E7DF8410EBFAAD323562FD913 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36242FCF53D342A1414E6A35BEE3C8E0 /* Alert.swift */; };
+		89E44F583CFACC46E04FE53D117F9C60 /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 6E3F3EC284398899F9D80F4662B94E72 /* it.lproj */; };
+		8DDF49E2AC6603769380FBF6F9DE1804 /* IASKAppSettingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DAA2B5C359960A4C07999834449125D /* IASKAppSettingsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E1280CE142EAE5FCCA8A68326F43F8E /* IASKSettingsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E421CE8AAA48FF6735948F0BE68935 /* IASKSettingsReader.m */; };
+		8E9EB88FC32BD9C6355D29D8D88CDC26 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 340ECA1C9FA97799424CA9691D0B6A5A /* fr.lproj */; };
+		901B537C50A75ED7D31FE2EA33F5659B /* ForecastIO-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA7056C065F647CE76F8799CDBD55CC /* ForecastIO-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F76E28C973A31CBC3855AA11AC2EA98 /* IASKSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A79C219D30AECB186F44E760657028 /* IASKSlider.m */; };
+		A5DFBD02A5DE4E71F7F9D06680F29C1C /* IASKAppSettingsWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B7A1E505C0BDAB0A2BF4671475305AB /* IASKAppSettingsWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4C7F8E25C617E0C12CBD7BA6011DC7F /* Pods-PicDMC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8835C19CBC691F0E7C2B09F9CB46198 /* Pods-PicDMC-dummy.m */; };
+		B5DA9DAF5453FC8FC2683C2C56C4E0BE /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9481BAA27EEC116E48BBBB4BCE3438C0 /* Icon.swift */; };
+		B7E25CFE205E1A00AB0A0614EE719B62 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1D327B71C072C86E3156FE02DEE538 /* Forecast.swift */; };
+		BA605DE9DAC3AE71C477ED604E11978E /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 3812EB93A98CE73F8ABBDC355FE8B4B3 /* es.lproj */; };
+		BACBE4A804B96F924BF4FED47272F0FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D8132F9DC617E978F59BF7226AC88A /* Foundation.framework */; };
+		BB06A279BF8EF15106312E8889E1B627 /* IASKSettingsReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F304FB4E950F2B83C39D3EFEBFF21D2 /* IASKSettingsReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCE0812BD1D62FD8B086B8F6CF6B9091 /* IASKSettingsStoreFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 692A862A3049F36494D2F0E6C97C818F /* IASKSettingsStoreFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD999B497F81FE4133BF13323869B10D /* DataBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762E1DD2AAF48104EC3375FE33C6AD59 /* DataBlock.swift */; };
+		C5D2F3EA4E550E8DCA2BCF8474D0B424 /* IASKMultipleValueSelection.h in Headers */ = {isa = PBXBuildFile; fileRef = 671B06169B803E82FA78F732DDDFB386 /* IASKMultipleValueSelection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9BF447D01F1EFE26399EE6319604B61 /* IASKAppSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FFC41F0BFC7CEF3DA33539B164F602 /* IASKAppSettingsViewController.m */; };
+		CFE641BFC14E301E1EE7C91A20DE362D /* Precipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7AF352926028174E3D06AA00739886 /* Precipitation.swift */; };
+		D588523B80B0D43F19BE9E3AC2A2F688 /* RequestMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7158018777117365D6088645A5FA2560 /* RequestMetadata.swift */; };
+		D7C1A356BF40055D55294E8F46A108E8 /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 85576654BBBC29AA9AD21D664B1AF9C2 /* ru.lproj */; };
+		D7C4EB2DB6A5054C1CFB63922FDD022A /* DarkSkyClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BBA4B65F433A286704F8E4E90D7B37 /* DarkSkyClient.swift */; };
+		D7D57622770F6B36B7D4D27D959DAF0F /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5281306AE682BD077BB21FA197ECE954 /* de.lproj */; };
+		D841B67FE0336A0E2C642C0CB85CC420 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0952F9B52A5DA37449AF14A1EA391B /* UIKit.framework */; };
+		DB6257CDA73706A0690D2C15AB82ACA1 /* IASKSpecifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 6150FFC28056CF531EC31E69ABD841C3 /* IASKSpecifier.m */; };
+		E902BA7E78980241CB2349B329BDCCEC /* IASKSettingsStoreUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FAFE94F66924C8B6DE476C70C0843E /* IASKSettingsStoreUserDefaults.m */; };
+		EA2493BAE7EE4A904BC093415719DD76 /* IASKSettingsStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 698AC14EE2FAB8BCC97D412E753098B5 /* IASKSettingsStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4061D80566952A4FD3E087EC0E27713 /* IASKPSTextFieldSpecifierViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C283745A0471E517B4F5CDE4EEF6819 /* IASKPSTextFieldSpecifierViewCell.m */; };
+		F4483B0BB3A0B826532F1B1DCD122374 /* IASKSpecifierValuesViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E67E1CCDDD1B9EC9A7137CC91CC6A61F /* IASKSpecifierValuesViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4DE15FF1336171363D8808DF3FABE72 /* IASKTextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 143FA1965380619AF4AA3A72CC9D2F1B /* IASKTextViewCell.m */; };
+		FA31D636B988D11BAEB90B06BC64CC27 /* Pods-PicDMC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15AE7C32ED6F9B902B509E1018C59D20 /* Pods-PicDMC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCC4E4649FD3B25F953561FE9A77FA02 /* IASKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A065D9B324E86481986274C521CC64 /* IASKTextField.m */; };
+		FD8118550EE928F3613FF589D8CB039C /* IASKSpecifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DBE0C215C29F46B4DE9C4811CEFD6F9 /* IASKSpecifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B51F9C752018C341011C024EDBEC9E3D /* PBXContainerItemProxy */ = {
+		0C4F56D9748838D116D9392586335341 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CB67190F0A60F7A033A3E515965C86F;
+			remoteInfo = InAppSettingsKit;
+		};
+		A786910E8CD895BA8D7441877F491954 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3F19738396425B89322D95E08B55C21F;
 			remoteInfo = ForecastIO;
 		};
+		FBE0D4BA15D301BB7ADD8451BC93EAA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA416ED70FC7E091F479F65D981FE8FC;
+			remoteInfo = "InAppSettingsKit-InAppSettingsKit";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		02F79A45F91D708FE45CADB2B134086C /* Pods-PicDMC-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PicDMC-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0D7AF352926028174E3D06AA00739886 /* Precipitation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Precipitation.swift; path = Source/Precipitation.swift; sourceTree = "<group>"; };
+		0DE5F8F013D9BD5CB8CCF5EA7F2D1949 /* InAppSettingsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InAppSettingsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		143FA1965380619AF4AA3A72CC9D2F1B /* IASKTextViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKTextViewCell.m; path = InAppSettingsKit/Views/IASKTextViewCell.m; sourceTree = "<group>"; };
+		14FC167E4C60A6FC8B93D87F2599C88C /* IASKTextViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKTextViewCell.h; path = InAppSettingsKit/Views/IASKTextViewCell.h; sourceTree = "<group>"; };
 		1549DCC44AB5B38AA44A0A774D3DF666 /* Pods-PicDMC-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PicDMC-resources.sh"; sourceTree = "<group>"; };
 		15AE7C32ED6F9B902B509E1018C59D20 /* Pods-PicDMC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PicDMC-umbrella.h"; sourceTree = "<group>"; };
-		1D37E06F51A26365713A950B23EF9558 /* RequestMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestMetadata.swift; path = Source/RequestMetadata.swift; sourceTree = "<group>"; };
+		16F6135CDE1C2F953B47F41EE5850DA7 /* InAppSettingsKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InAppSettingsKit.xcconfig; sourceTree = "<group>"; };
+		1A3922215151677744055C0DE81D9A73 /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AEF86E61C9008F40B8DBBA1118F3481 /* ForecastIO.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ForecastIO.xcconfig; sourceTree = "<group>"; };
+		1BB4C13F76435C442F7BDBD2CEDEC324 /* Flag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flag.swift; path = Source/Flag.swift; sourceTree = "<group>"; };
 		1EC562CEDFFB7EFC6B5DA77E24FB7F31 /* Pods-PicDMC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PicDMC.debug.xcconfig"; sourceTree = "<group>"; };
-		1F46572221E8D841270774FE81EBE8E5 /* Alert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = Source/Alert.swift; sourceTree = "<group>"; };
+		1F304FB4E950F2B83C39D3EFEBFF21D2 /* IASKSettingsReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKSettingsReader.h; path = InAppSettingsKit/Models/IASKSettingsReader.h; sourceTree = "<group>"; };
 		2223B877E293E67E8987AC21F58AD759 /* Pods-PicDMC-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PicDMC-acknowledgements.plist"; sourceTree = "<group>"; };
-		2464A9BCB7AC62C377A11419F7AA22C1 /* Pods_PicDMC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PicDMC.framework; path = "Pods-PicDMC.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B0DDDED02CEC50115467D43F0D156C6 /* ForecastIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ForecastIO.framework; path = ForecastIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		40C71B82F1D334970E1B76F7646D0B57 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4E65B63CFCCAB246C0DAB6545451BB3C /* ForecastIO-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ForecastIO-prefix.pch"; sourceTree = "<group>"; };
-		5425878C620F423582EAAF95112D3106 /* Units.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Units.swift; path = Source/Units.swift; sourceTree = "<group>"; };
-		57D1703D9031689C17F26344C239FDF5 /* ForecastIO-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ForecastIO-umbrella.h"; sourceTree = "<group>"; };
-		5B6902705D11E7B858D13940CBD8B4FD /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		5E47C300FF31248FE15A00F5FC580164 /* ForecastIO.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ForecastIO.modulemap; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		68D6ED8034A0CFAB2426CA07AA058AE4 /* Pods-PicDMC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-PicDMC.modulemap"; sourceTree = "<group>"; };
-		699F7AE1982B6D2FE1B9C1A9C41FD479 /* DataBlock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataBlock.swift; path = Source/DataBlock.swift; sourceTree = "<group>"; };
+		228A729862735CC63DF9AE00549D2FB3 /* IASKPSSliderSpecifierViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKPSSliderSpecifierViewCell.m; path = InAppSettingsKit/Views/IASKPSSliderSpecifierViewCell.m; sourceTree = "<group>"; };
+		2BA7056C065F647CE76F8799CDBD55CC /* ForecastIO-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ForecastIO-umbrella.h"; sourceTree = "<group>"; };
+		340ECA1C9FA97799424CA9691D0B6A5A /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = fr.lproj; path = InAppSettingsKit/Resources/fr.lproj; sourceTree = "<group>"; };
+		36242FCF53D342A1414E6A35BEE3C8E0 /* Alert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alert.swift; path = Source/Alert.swift; sourceTree = "<group>"; };
+		3812EB93A98CE73F8ABBDC355FE8B4B3 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = es.lproj; path = InAppSettingsKit/Resources/es.lproj; sourceTree = "<group>"; };
+		3B4D910DA9F0D9AD9C760E18212D1E65 /* IASKTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKTextView.h; path = InAppSettingsKit/Views/IASKTextView.h; sourceTree = "<group>"; };
+		3F2AD07C95147E9C3ADED76A37038FE7 /* pt-PT.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "pt-PT.lproj"; path = "InAppSettingsKit/Resources/pt-PT.lproj"; sourceTree = "<group>"; };
+		411A4C520422BF4DC020F1B31F1A1C77 /* sv.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = sv.lproj; path = InAppSettingsKit/Resources/sv.lproj; sourceTree = "<group>"; };
+		45E421CE8AAA48FF6735948F0BE68935 /* IASKSettingsReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKSettingsReader.m; path = InAppSettingsKit/Models/IASKSettingsReader.m; sourceTree = "<group>"; };
+		478B069ED5D63C92CF33D6C8FA94E788 /* ForecastIO-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ForecastIO-dummy.m"; sourceTree = "<group>"; };
+		4C283745A0471E517B4F5CDE4EEF6819 /* IASKPSTextFieldSpecifierViewCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKPSTextFieldSpecifierViewCell.m; path = InAppSettingsKit/Views/IASKPSTextFieldSpecifierViewCell.m; sourceTree = "<group>"; };
+		4E182D33B8313E6E57F1CADEE66FCA63 /* IASKViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKViewController.h; path = InAppSettingsKit/Controllers/IASKViewController.h; sourceTree = "<group>"; };
+		5033D48A9B720A0845E6F0C508320F96 /* InAppSettingsKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = InAppSettingsKit.modulemap; sourceTree = "<group>"; };
+		5281306AE682BD077BB21FA197ECE954 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = de.lproj; path = InAppSettingsKit/Resources/de.lproj; sourceTree = "<group>"; };
+		58758F61377375AC25D73545BD1C4B0D /* IASKSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKSlider.h; path = InAppSettingsKit/Views/IASKSlider.h; sourceTree = "<group>"; };
+		5BE012702488A1A63D02E1376BEDBC37 /* IASKPSTextFieldSpecifierViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKPSTextFieldSpecifierViewCell.h; path = InAppSettingsKit/Views/IASKPSTextFieldSpecifierViewCell.h; sourceTree = "<group>"; };
+		5E341748938A8EA9A6C4E31EB559E577 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = InAppSettingsKit/Resources/en.lproj; sourceTree = "<group>"; };
+		5E3ED3B9A3DB90BF979D70F3D6B45878 /* IASKSpecifierValuesViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKSpecifierValuesViewController.m; path = InAppSettingsKit/Controllers/IASKSpecifierValuesViewController.m; sourceTree = "<group>"; };
+		6150FFC28056CF531EC31E69ABD841C3 /* IASKSpecifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKSpecifier.m; path = InAppSettingsKit/Models/IASKSpecifier.m; sourceTree = "<group>"; };
+		671B06169B803E82FA78F732DDDFB386 /* IASKMultipleValueSelection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKMultipleValueSelection.h; path = InAppSettingsKit/Controllers/IASKMultipleValueSelection.h; sourceTree = "<group>"; };
+		68889B61B7377E519BEA02F17794453B /* IASKTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKTextField.h; path = InAppSettingsKit/Views/IASKTextField.h; sourceTree = "<group>"; };
+		68D6ED8034A0CFAB2426CA07AA058AE4 /* Pods-PicDMC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PicDMC.modulemap"; sourceTree = "<group>"; };
+		692A862A3049F36494D2F0E6C97C818F /* IASKSettingsStoreFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKSettingsStoreFile.h; path = InAppSettingsKit/Models/IASKSettingsStoreFile.h; sourceTree = "<group>"; };
+		698AC14EE2FAB8BCC97D412E753098B5 /* IASKSettingsStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKSettingsStore.h; path = InAppSettingsKit/Models/IASKSettingsStore.h; sourceTree = "<group>"; };
 		69B84AFD7331947B19282D53B68CD703 /* Pods-PicDMC-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PicDMC-frameworks.sh"; sourceTree = "<group>"; };
+		6E3F3EC284398899F9D80F4662B94E72 /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = it.lproj; path = InAppSettingsKit/Resources/it.lproj; sourceTree = "<group>"; };
+		6EEBEE928E3B6D3ACDE5DDA14C50566A /* ForecastIO-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ForecastIO-prefix.pch"; sourceTree = "<group>"; };
 		6FCEA0C40760C909DFB941C4FD1FBCB4 /* Pods-PicDMC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PicDMC.release.xcconfig"; sourceTree = "<group>"; };
+		7129DE0868349447471B5BDA394A1235 /* IASKSettingsStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKSettingsStore.m; path = InAppSettingsKit/Models/IASKSettingsStore.m; sourceTree = "<group>"; };
+		7158018777117365D6088645A5FA2560 /* RequestMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestMetadata.swift; path = Source/RequestMetadata.swift; sourceTree = "<group>"; };
+		7415C77746B09208689BC5D0618FAF36 /* Pods_PicDMC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PicDMC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74EBB9049470CCB6A29E4AD2D2CBDC3F /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = nl.lproj; path = InAppSettingsKit/Resources/nl.lproj; sourceTree = "<group>"; };
+		762E1DD2AAF48104EC3375FE33C6AD59 /* DataBlock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataBlock.swift; path = Source/DataBlock.swift; sourceTree = "<group>"; };
+		781FCFF1978CC79DD037CFD93C00E5FF /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ja.lproj; path = InAppSettingsKit/Resources/ja.lproj; sourceTree = "<group>"; };
 		7A0C91128C2567AF7D2EE0E5E86B6EA5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		856CEBDD434EA4F898D236A38C3052CE /* Precipitation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Precipitation.swift; path = Source/Precipitation.swift; sourceTree = "<group>"; };
-		89DB504AB8A9BB7EFF6C5DBE5587E4F8 /* Flag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flag.swift; path = Source/Flag.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AB67E773D560688198A693FEDF007EFF /* ForecastIO.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ForecastIO.xcconfig; sourceTree = "<group>"; };
-		B448DB0F005946D23B80C24251590FCA /* ForecastIOError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ForecastIOError.swift; path = Source/ForecastIOError.swift; sourceTree = "<group>"; };
-		C531BFD697DD449A65ECF896F71FAC09 /* Language.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Language.swift; path = Source/Language.swift; sourceTree = "<group>"; };
+		7B7A1E505C0BDAB0A2BF4671475305AB /* IASKAppSettingsWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKAppSettingsWebViewController.h; path = InAppSettingsKit/Controllers/IASKAppSettingsWebViewController.h; sourceTree = "<group>"; };
+		7DAA2B5C359960A4C07999834449125D /* IASKAppSettingsViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKAppSettingsViewController.h; path = InAppSettingsKit/Controllers/IASKAppSettingsViewController.h; sourceTree = "<group>"; };
+		844EE918CC87C2D541657CB3AC770484 /* Base.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = Base.lproj; path = InAppSettingsKit/Resources/Base.lproj; sourceTree = "<group>"; };
+		848E6D8E9D9005BBDAADF95530058B32 /* Language.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Language.swift; path = Source/Language.swift; sourceTree = "<group>"; };
+		85576654BBBC29AA9AD21D664B1AF9C2 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ru.lproj; path = InAppSettingsKit/Resources/ru.lproj; sourceTree = "<group>"; };
+		8C7FEE2FB9EDEA66292ED76D96C00286 /* IASKSettingsStoreUserDefaults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKSettingsStoreUserDefaults.h; path = InAppSettingsKit/Models/IASKSettingsStoreUserDefaults.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9481BAA27EEC116E48BBBB4BCE3438C0 /* Icon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Icon.swift; path = Source/Icon.swift; sourceTree = "<group>"; };
+		9A55E6ACEFBF29615775E0876C77EB33 /* IASKAppSettingsWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKAppSettingsWebViewController.m; path = InAppSettingsKit/Controllers/IASKAppSettingsWebViewController.m; sourceTree = "<group>"; };
+		9DBE0C215C29F46B4DE9C4811CEFD6F9 /* IASKSpecifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKSpecifier.h; path = InAppSettingsKit/Models/IASKSpecifier.h; sourceTree = "<group>"; };
+		9E8C189AA32F71994A44E20E2067712A /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = tr.lproj; path = InAppSettingsKit/Resources/tr.lproj; sourceTree = "<group>"; };
+		A5A065D9B324E86481986274C521CC64 /* IASKTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKTextField.m; path = InAppSettingsKit/Views/IASKTextField.m; sourceTree = "<group>"; };
+		A74B22197D14DFE24DDBA9DEB576D93F /* IASKSwitch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKSwitch.h; path = InAppSettingsKit/Views/IASKSwitch.h; sourceTree = "<group>"; };
+		A964D4070CB3BB4F71610BA8242B5E10 /* ResourceBundle-InAppSettingsKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-InAppSettingsKit-Info.plist"; sourceTree = "<group>"; };
+		AF04DC38CD3293C3517CE2BC1A69624A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B30D102FDACD0233B08A930BCCB65618 /* InAppSettingsKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InAppSettingsKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7EC78DA6C964E6D7FD2A2F7594935EC /* Units.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Units.swift; path = Source/Units.swift; sourceTree = "<group>"; };
+		C527C9BC42523050F919FB33F6502FCF /* IASKPSSliderSpecifierViewCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKPSSliderSpecifierViewCell.h; path = InAppSettingsKit/Views/IASKPSSliderSpecifierViewCell.h; sourceTree = "<group>"; };
+		CA777BE88BB4415709159CC8FACA6BB1 /* InAppSettingsKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InAppSettingsKit-prefix.pch"; sourceTree = "<group>"; };
+		CCC9DFE70A35B1C9D56C07C8E27586F5 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
+		D281628AA4737E820702CF80CC898BAD /* IASKSettingsStoreFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKSettingsStoreFile.m; path = InAppSettingsKit/Models/IASKSettingsStoreFile.m; sourceTree = "<group>"; };
+		D38EBFFB4F4E94A2F1C513684BE34BFB /* IASKMultipleValueSelection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKMultipleValueSelection.m; path = InAppSettingsKit/Controllers/IASKMultipleValueSelection.m; sourceTree = "<group>"; };
+		D3BF7CAE15ED5A6E6ABD9A8945A1C507 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		D8835C19CBC691F0E7C2B09F9CB46198 /* Pods-PicDMC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PicDMC-dummy.m"; sourceTree = "<group>"; };
-		DCE83C53E4A09349A5AC3D70DF3B34A8 /* DarkSkyClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DarkSkyClient.swift; path = Source/DarkSkyClient.swift; sourceTree = "<group>"; };
-		E07A8115FAEB63C3AA42F246481865E0 /* Forecast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Forecast.swift; path = Source/Forecast.swift; sourceTree = "<group>"; };
-		E145886EFD7D671FA2580E8AB94D135E /* Icon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Icon.swift; path = Source/Icon.swift; sourceTree = "<group>"; };
-		E27742FAA7A8F6B2ACE859A1D6FA2072 /* DataPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataPoint.swift; path = Source/DataPoint.swift; sourceTree = "<group>"; };
-		F3607351BF7AE99FADCD74B66E195D19 /* ForecastIO-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ForecastIO-dummy.m"; sourceTree = "<group>"; };
+		DAE16FF6CD27C575D216658AB6202ED8 /* ForecastIO.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ForecastIO.modulemap; sourceTree = "<group>"; };
+		DD54BE314DB0CD74DE8FB1A5F0CFE686 /* IASKTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKTextView.m; path = InAppSettingsKit/Views/IASKTextView.m; sourceTree = "<group>"; };
+		E2A79C219D30AECB186F44E760657028 /* IASKSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKSlider.m; path = InAppSettingsKit/Views/IASKSlider.m; sourceTree = "<group>"; };
+		E2F60D7B09404FF41D6ABD9E969C1E30 /* DataPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataPoint.swift; path = Source/DataPoint.swift; sourceTree = "<group>"; };
+		E67E1CCDDD1B9EC9A7137CC91CC6A61F /* IASKSpecifierValuesViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IASKSpecifierValuesViewController.h; path = InAppSettingsKit/Controllers/IASKSpecifierValuesViewController.h; sourceTree = "<group>"; };
+		E6D496970C635A6B046620066A1424E2 /* InAppSettingsKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InAppSettingsKit-umbrella.h"; sourceTree = "<group>"; };
+		E6FAFE94F66924C8B6DE476C70C0843E /* IASKSettingsStoreUserDefaults.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKSettingsStoreUserDefaults.m; path = InAppSettingsKit/Models/IASKSettingsStoreUserDefaults.m; sourceTree = "<group>"; };
+		E6FFC41F0BFC7CEF3DA33539B164F602 /* IASKAppSettingsViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKAppSettingsViewController.m; path = InAppSettingsKit/Controllers/IASKAppSettingsViewController.m; sourceTree = "<group>"; };
+		E8F8818ED18799263B4962AC2142230B /* th.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = th.lproj; path = InAppSettingsKit/Resources/th.lproj; sourceTree = "<group>"; };
+		EBB2B767BCAA54D92B174D7BEFD60849 /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = pt.lproj; path = InAppSettingsKit/Resources/pt.lproj; sourceTree = "<group>"; };
+		EBFD10AAA8C7D24B41445DA8F5F711EF /* el.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = el.lproj; path = InAppSettingsKit/Resources/el.lproj; sourceTree = "<group>"; };
+		ECEF7336847BF2B5CC72A3C2339D7E8D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE1D327B71C072C86E3156FE02DEE538 /* Forecast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Forecast.swift; path = Source/Forecast.swift; sourceTree = "<group>"; };
+		F2C411920433CDAE85C351CF0B16F3AF /* IASKSwitch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IASKSwitch.m; path = InAppSettingsKit/Views/IASKSwitch.m; sourceTree = "<group>"; };
+		F3D8132F9DC617E978F59BF7226AC88A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F5BBA4B65F433A286704F8E4E90D7B37 /* DarkSkyClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DarkSkyClient.swift; path = Source/DarkSkyClient.swift; sourceTree = "<group>"; };
+		F8A33821AB2BE20EE97128CBD1F47FCE /* InAppSettingsKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "InAppSettingsKit-dummy.m"; sourceTree = "<group>"; };
+		FD0952F9B52A5DA37449AF14A1EA391B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		FD6AA79B644543F38E76177E19BB20AC /* ForecastIOError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ForecastIOError.swift; path = Source/ForecastIOError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,63 +210,172 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88268886FA5497C514CF87B20FE1E6A0 /* Frameworks */ = {
+		80ACB52A137449ABD6F724425403D16F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DC301C41FAEFF5F05F10C6352FD73DA /* Foundation.framework in Frameworks */,
+				BACBE4A804B96F924BF4FED47272F0FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3735A807C728BE1017B3070E3C5BBFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC9AF7A9114E126D9244309549CB2D7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661D7B9E41755FE4FB983FE783A7F881 /* Foundation.framework in Frameworks */,
+				6DFA183CD1FFCFABEDE86006238C03BC /* MessageUI.framework in Frameworks */,
+				D841B67FE0336A0E2C642C0CB85CC420 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16AAE1EA0AC6541309B156A89E2E8298 /* ForecastIO */ = {
+		050C637F59D876B57D14F3DCFD1E5955 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1F46572221E8D841270774FE81EBE8E5 /* Alert.swift */,
-				DCE83C53E4A09349A5AC3D70DF3B34A8 /* DarkSkyClient.swift */,
-				699F7AE1982B6D2FE1B9C1A9C41FD479 /* DataBlock.swift */,
-				E27742FAA7A8F6B2ACE859A1D6FA2072 /* DataPoint.swift */,
-				89DB504AB8A9BB7EFF6C5DBE5587E4F8 /* Flag.swift */,
-				E07A8115FAEB63C3AA42F246481865E0 /* Forecast.swift */,
-				B448DB0F005946D23B80C24251590FCA /* ForecastIOError.swift */,
-				E145886EFD7D671FA2580E8AB94D135E /* Icon.swift */,
-				C531BFD697DD449A65ECF896F71FAC09 /* Language.swift */,
-				856CEBDD434EA4F898D236A38C3052CE /* Precipitation.swift */,
-				1D37E06F51A26365713A950B23EF9558 /* RequestMetadata.swift */,
-				5B6902705D11E7B858D13940CBD8B4FD /* Result.swift */,
-				5425878C620F423582EAAF95112D3106 /* Units.swift */,
-				C1E5024B01F1AB57F31EF3435E953A62 /* Support Files */,
+				844EE918CC87C2D541657CB3AC770484 /* Base.lproj */,
+				5281306AE682BD077BB21FA197ECE954 /* de.lproj */,
+				EBFD10AAA8C7D24B41445DA8F5F711EF /* el.lproj */,
+				5E341748938A8EA9A6C4E31EB559E577 /* en.lproj */,
+				3812EB93A98CE73F8ABBDC355FE8B4B3 /* es.lproj */,
+				340ECA1C9FA97799424CA9691D0B6A5A /* fr.lproj */,
+				6E3F3EC284398899F9D80F4662B94E72 /* it.lproj */,
+				781FCFF1978CC79DD037CFD93C00E5FF /* ja.lproj */,
+				74EBB9049470CCB6A29E4AD2D2CBDC3F /* nl.lproj */,
+				EBB2B767BCAA54D92B174D7BEFD60849 /* pt.lproj */,
+				3F2AD07C95147E9C3ADED76A37038FE7 /* pt-PT.lproj */,
+				85576654BBBC29AA9AD21D664B1AF9C2 /* ru.lproj */,
+				411A4C520422BF4DC020F1B31F1A1C77 /* sv.lproj */,
+				E8F8818ED18799263B4962AC2142230B /* th.lproj */,
+				9E8C189AA32F71994A44E20E2067712A /* tr.lproj */,
 			);
-			name = ForecastIO;
-			path = ForecastIO;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		223F1515A8E3251C88060C9F1A4F26CA /* Pods */ = {
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				16AAE1EA0AC6541309B156A89E2E8298 /* ForecastIO */,
+				454CFBD41F93F89DA1E617E8CC8C9388 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2201AC0B301D7610D37A9433CA8F577B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAE16FF6CD27C575D216658AB6202ED8 /* ForecastIO.modulemap */,
+				1AEF86E61C9008F40B8DBBA1118F3481 /* ForecastIO.xcconfig */,
+				478B069ED5D63C92CF33D6C8FA94E788 /* ForecastIO-dummy.m */,
+				6EEBEE928E3B6D3ACDE5DDA14C50566A /* ForecastIO-prefix.pch */,
+				2BA7056C065F647CE76F8799CDBD55CC /* ForecastIO-umbrella.h */,
+				ECEF7336847BF2B5CC72A3C2339D7E8D /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ForecastIO";
+			sourceTree = "<group>";
+		};
+		40C0F5E2A77FB2CB041898056036C031 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7F33D947CA32E454233DC409E859175 /* ForecastIO */,
+				46B63C1CAF927A2352799D386D282E04 /* InAppSettingsKit */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		3F52E3CD49653F71428FED4C8AB01D97 /* Products */ = {
+		454CFBD41F93F89DA1E617E8CC8C9388 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				2B0DDDED02CEC50115467D43F0D156C6 /* ForecastIO.framework */,
-				2464A9BCB7AC62C377A11419F7AA22C1 /* Pods_PicDMC.framework */,
+				F3D8132F9DC617E978F59BF7226AC88A /* Foundation.framework */,
+				CCC9DFE70A35B1C9D56C07C8E27586F5 /* MessageUI.framework */,
+				FD0952F9B52A5DA37449AF14A1EA391B /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		46B63C1CAF927A2352799D386D282E04 /* InAppSettingsKit */ = {
+			isa = PBXGroup;
+			children = (
+				7DAA2B5C359960A4C07999834449125D /* IASKAppSettingsViewController.h */,
+				E6FFC41F0BFC7CEF3DA33539B164F602 /* IASKAppSettingsViewController.m */,
+				7B7A1E505C0BDAB0A2BF4671475305AB /* IASKAppSettingsWebViewController.h */,
+				9A55E6ACEFBF29615775E0876C77EB33 /* IASKAppSettingsWebViewController.m */,
+				671B06169B803E82FA78F732DDDFB386 /* IASKMultipleValueSelection.h */,
+				D38EBFFB4F4E94A2F1C513684BE34BFB /* IASKMultipleValueSelection.m */,
+				C527C9BC42523050F919FB33F6502FCF /* IASKPSSliderSpecifierViewCell.h */,
+				228A729862735CC63DF9AE00549D2FB3 /* IASKPSSliderSpecifierViewCell.m */,
+				5BE012702488A1A63D02E1376BEDBC37 /* IASKPSTextFieldSpecifierViewCell.h */,
+				4C283745A0471E517B4F5CDE4EEF6819 /* IASKPSTextFieldSpecifierViewCell.m */,
+				1F304FB4E950F2B83C39D3EFEBFF21D2 /* IASKSettingsReader.h */,
+				45E421CE8AAA48FF6735948F0BE68935 /* IASKSettingsReader.m */,
+				698AC14EE2FAB8BCC97D412E753098B5 /* IASKSettingsStore.h */,
+				7129DE0868349447471B5BDA394A1235 /* IASKSettingsStore.m */,
+				692A862A3049F36494D2F0E6C97C818F /* IASKSettingsStoreFile.h */,
+				D281628AA4737E820702CF80CC898BAD /* IASKSettingsStoreFile.m */,
+				8C7FEE2FB9EDEA66292ED76D96C00286 /* IASKSettingsStoreUserDefaults.h */,
+				E6FAFE94F66924C8B6DE476C70C0843E /* IASKSettingsStoreUserDefaults.m */,
+				58758F61377375AC25D73545BD1C4B0D /* IASKSlider.h */,
+				E2A79C219D30AECB186F44E760657028 /* IASKSlider.m */,
+				9DBE0C215C29F46B4DE9C4811CEFD6F9 /* IASKSpecifier.h */,
+				6150FFC28056CF531EC31E69ABD841C3 /* IASKSpecifier.m */,
+				E67E1CCDDD1B9EC9A7137CC91CC6A61F /* IASKSpecifierValuesViewController.h */,
+				5E3ED3B9A3DB90BF979D70F3D6B45878 /* IASKSpecifierValuesViewController.m */,
+				A74B22197D14DFE24DDBA9DEB576D93F /* IASKSwitch.h */,
+				F2C411920433CDAE85C351CF0B16F3AF /* IASKSwitch.m */,
+				68889B61B7377E519BEA02F17794453B /* IASKTextField.h */,
+				A5A065D9B324E86481986274C521CC64 /* IASKTextField.m */,
+				3B4D910DA9F0D9AD9C760E18212D1E65 /* IASKTextView.h */,
+				DD54BE314DB0CD74DE8FB1A5F0CFE686 /* IASKTextView.m */,
+				14FC167E4C60A6FC8B93D87F2599C88C /* IASKTextViewCell.h */,
+				143FA1965380619AF4AA3A72CC9D2F1B /* IASKTextViewCell.m */,
+				4E182D33B8313E6E57F1CADEE66FCA63 /* IASKViewController.h */,
+				050C637F59D876B57D14F3DCFD1E5955 /* Resources */,
+				733A084DD92339D4FC256C0D407B5887 /* Support Files */,
+			);
+			path = InAppSettingsKit;
+			sourceTree = "<group>";
+		};
+		6C3B4C7FD8B4CB1E36788D87122C91B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A3922215151677744055C0DE81D9A73 /* ForecastIO.framework */,
+				B30D102FDACD0233B08A930BCCB65618 /* InAppSettingsKit.bundle */,
+				0DE5F8F013D9BD5CB8CCF5EA7F2D1949 /* InAppSettingsKit.framework */,
+				7415C77746B09208689BC5D0618FAF36 /* Pods_PicDMC.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		733A084DD92339D4FC256C0D407B5887 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5033D48A9B720A0845E6F0C508320F96 /* InAppSettingsKit.modulemap */,
+				16F6135CDE1C2F953B47F41EE5850DA7 /* InAppSettingsKit.xcconfig */,
+				F8A33821AB2BE20EE97128CBD1F47FCE /* InAppSettingsKit-dummy.m */,
+				CA777BE88BB4415709159CC8FACA6BB1 /* InAppSettingsKit-prefix.pch */,
+				E6D496970C635A6B046620066A1424E2 /* InAppSettingsKit-umbrella.h */,
+				AF04DC38CD3293C3517CE2BC1A69624A /* Info.plist */,
+				A964D4070CB3BB4F71610BA8242B5E10 /* ResourceBundle-InAppSettingsKit-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/InAppSettingsKit";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				223F1515A8E3251C88060C9F1A4F26CA /* Pods */,
-				3F52E3CD49653F71428FED4C8AB01D97 /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				40C0F5E2A77FB2CB041898056036C031 /* Pods */,
+				6C3B4C7FD8B4CB1E36788D87122C91B5 /* Products */,
 				9A52C9F76352CEFE0ACBCFC2D41AE3F7 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -170,44 +406,60 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		A7F33D947CA32E454233DC409E859175 /* ForecastIO */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				36242FCF53D342A1414E6A35BEE3C8E0 /* Alert.swift */,
+				F5BBA4B65F433A286704F8E4E90D7B37 /* DarkSkyClient.swift */,
+				762E1DD2AAF48104EC3375FE33C6AD59 /* DataBlock.swift */,
+				E2F60D7B09404FF41D6ABD9E969C1E30 /* DataPoint.swift */,
+				1BB4C13F76435C442F7BDBD2CEDEC324 /* Flag.swift */,
+				EE1D327B71C072C86E3156FE02DEE538 /* Forecast.swift */,
+				FD6AA79B644543F38E76177E19BB20AC /* ForecastIOError.swift */,
+				9481BAA27EEC116E48BBBB4BCE3438C0 /* Icon.swift */,
+				848E6D8E9D9005BBDAADF95530058B32 /* Language.swift */,
+				0D7AF352926028174E3D06AA00739886 /* Precipitation.swift */,
+				7158018777117365D6088645A5FA2560 /* RequestMetadata.swift */,
+				D3BF7CAE15ED5A6E6ABD9A8945A1C507 /* Result.swift */,
+				B7EC78DA6C964E6D7FD2A2F7594935EC /* Units.swift */,
+				2201AC0B301D7610D37A9433CA8F577B /* Support Files */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C1E5024B01F1AB57F31EF3435E953A62 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5E47C300FF31248FE15A00F5FC580164 /* ForecastIO.modulemap */,
-				AB67E773D560688198A693FEDF007EFF /* ForecastIO.xcconfig */,
-				F3607351BF7AE99FADCD74B66E195D19 /* ForecastIO-dummy.m */,
-				4E65B63CFCCAB246C0DAB6545451BB3C /* ForecastIO-prefix.pch */,
-				57D1703D9031689C17F26344C239FDF5 /* ForecastIO-umbrella.h */,
-				40C71B82F1D334970E1B76F7646D0B57 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ForecastIO";
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
+			path = ForecastIO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9E075D84C6F4570A4816F7C56AD0EDA7 /* Headers */ = {
+		633AD4CB3B6A0A0CEB4F8141B546CC6D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				037B6B0906551177C872293BB9412D34 /* Pods-PicDMC-umbrella.h in Headers */,
+				FA31D636B988D11BAEB90B06BC64CC27 /* Pods-PicDMC-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF2136EDF3C5A6DE23E8ECD1C4B31E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DDF49E2AC6603769380FBF6F9DE1804 /* IASKAppSettingsViewController.h in Headers */,
+				A5DFBD02A5DE4E71F7F9D06680F29C1C /* IASKAppSettingsWebViewController.h in Headers */,
+				C5D2F3EA4E550E8DCA2BCF8474D0B424 /* IASKMultipleValueSelection.h in Headers */,
+				6E86A53D9E226CD6427ED079F66E6915 /* IASKPSSliderSpecifierViewCell.h in Headers */,
+				6BE3ACBCC4160CA4AE1448CA1089DF32 /* IASKPSTextFieldSpecifierViewCell.h in Headers */,
+				BB06A279BF8EF15106312E8889E1B627 /* IASKSettingsReader.h in Headers */,
+				EA2493BAE7EE4A904BC093415719DD76 /* IASKSettingsStore.h in Headers */,
+				BCE0812BD1D62FD8B086B8F6CF6B9091 /* IASKSettingsStoreFile.h in Headers */,
+				703A72D55C393C7FFEE4744F46A9C144 /* IASKSettingsStoreUserDefaults.h in Headers */,
+				24337B11FE4ED1EB684AA97F860C6F12 /* IASKSlider.h in Headers */,
+				FD8118550EE928F3613FF589D8CB039C /* IASKSpecifier.h in Headers */,
+				F4483B0BB3A0B826532F1B1DCD122374 /* IASKSpecifierValuesViewController.h in Headers */,
+				72A0AAEF5DFC21535D630C3185726ABD /* IASKSwitch.h in Headers */,
+				42FE84DA02ED5089A5126BEF584B4CB1 /* IASKTextField.h in Headers */,
+				16F437159F45F56E5CE4B9911233EBEB /* IASKTextView.h in Headers */,
+				2D7D03048DBFF4379F7D011925B2FEF4 /* IASKTextViewCell.h in Headers */,
+				419CAA9405DD3DE29BD3278A9B54DB99 /* IASKViewController.h in Headers */,
+				6622595A38D22163D16FB5015136080D /* InAppSettingsKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,26 +488,63 @@
 			);
 			name = ForecastIO;
 			productName = ForecastIO;
-			productReference = 2B0DDDED02CEC50115467D43F0D156C6 /* ForecastIO.framework */;
+			productReference = 1A3922215151677744055C0DE81D9A73 /* ForecastIO.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		72CE2118BD08E1B8FA45CABF2763C99E /* Pods-PicDMC */ = {
+		8CB67190F0A60F7A033A3E515965C86F /* InAppSettingsKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 60B882322A1084EFD6D623FB5437257A /* Build configuration list for PBXNativeTarget "Pods-PicDMC" */;
+			buildConfigurationList = AB8ABE9ED4D3D80444381D9DFFA319CF /* Build configuration list for PBXNativeTarget "InAppSettingsKit" */;
 			buildPhases = (
-				AB5349BCA526376511C5C018B2C9DF48 /* Sources */,
-				88268886FA5497C514CF87B20FE1E6A0 /* Frameworks */,
-				9E075D84C6F4570A4816F7C56AD0EDA7 /* Headers */,
+				3C87DD49BE80BCE80E4D54AB3FBA2800 /* Sources */,
+				DC9AF7A9114E126D9244309549CB2D7C /* Frameworks */,
+				65699E082BDC3BFD9A0D31D42D485749 /* Resources */,
+				9EF2136EDF3C5A6DE23E8ECD1C4B31E7 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				793DF7F32F319AA8B4CBDE9234582EE3 /* PBXTargetDependency */,
+				8B85A75C95D945DF6A59FFBD01F86445 /* PBXTargetDependency */,
+			);
+			name = InAppSettingsKit;
+			productName = InAppSettingsKit;
+			productReference = 0DE5F8F013D9BD5CB8CCF5EA7F2D1949 /* InAppSettingsKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9FF4BA2404658EA9FC6B255D48662261 /* Pods-PicDMC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FCBF93EF98B1125037222020E826711 /* Build configuration list for PBXNativeTarget "Pods-PicDMC" */;
+			buildPhases = (
+				B3D1C25B48EAF54FABFE089AEDDE47E7 /* Sources */,
+				80ACB52A137449ABD6F724425403D16F /* Frameworks */,
+				633AD4CB3B6A0A0CEB4F8141B546CC6D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FDB4338D1C101201E63A2BC7B44B2D3 /* PBXTargetDependency */,
+				BD6AE111EC4C78FC0D349F8C5FDE2B2B /* PBXTargetDependency */,
 			);
 			name = "Pods-PicDMC";
 			productName = "Pods-PicDMC";
-			productReference = 2464A9BCB7AC62C377A11419F7AA22C1 /* Pods_PicDMC.framework */;
+			productReference = 7415C77746B09208689BC5D0618FAF36 /* Pods_PicDMC.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		FA416ED70FC7E091F479F65D981FE8FC /* InAppSettingsKit-InAppSettingsKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5C6AB672F1E8A23C8B317127FB1353C /* Build configuration list for PBXNativeTarget "InAppSettingsKit-InAppSettingsKit" */;
+			buildPhases = (
+				6F3A140CA594AED3FF647C3EA0FF4195 /* Sources */,
+				A3735A807C728BE1017B3070E3C5BBFB /* Frameworks */,
+				0806F4DF473CF7F1286E62AFCF5DFC29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "InAppSettingsKit-InAppSettingsKit";
+			productName = "InAppSettingsKit-InAppSettingsKit";
+			productReference = B30D102FDACD0233B08A930BCCB65618 /* InAppSettingsKit.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -264,7 +553,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0920;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -274,17 +563,76 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3F52E3CD49653F71428FED4C8AB01D97 /* Products */;
+			productRefGroup = 6C3B4C7FD8B4CB1E36788D87122C91B5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				3F19738396425B89322D95E08B55C21F /* ForecastIO */,
-				72CE2118BD08E1B8FA45CABF2763C99E /* Pods-PicDMC */,
+				8CB67190F0A60F7A033A3E515965C86F /* InAppSettingsKit */,
+				FA416ED70FC7E091F479F65D981FE8FC /* InAppSettingsKit-InAppSettingsKit */,
+				9FF4BA2404658EA9FC6B255D48662261 /* Pods-PicDMC */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		0806F4DF473CF7F1286E62AFCF5DFC29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2167E358A52FE1C105E8FD39A51498D7 /* Base.lproj in Resources */,
+				D7D57622770F6B36B7D4D27D959DAF0F /* de.lproj in Resources */,
+				4998C73670492A5B49463B947B65C9B8 /* el.lproj in Resources */,
+				4FEC172D08025B1FF32ECEAF3E58FC2C /* en.lproj in Resources */,
+				BA605DE9DAC3AE71C477ED604E11978E /* es.lproj in Resources */,
+				8E9EB88FC32BD9C6355D29D8D88CDC26 /* fr.lproj in Resources */,
+				89E44F583CFACC46E04FE53D117F9C60 /* it.lproj in Resources */,
+				4D210E159BFB94B43BA1DEF818697047 /* ja.lproj in Resources */,
+				5522CC4F310DC2DD0C7498E99A659568 /* nl.lproj in Resources */,
+				6156D7694F10E0ED2212E94CC346B4F8 /* pt-PT.lproj in Resources */,
+				88882F4E2DECC41B49087098118FF0D3 /* pt.lproj in Resources */,
+				D7C1A356BF40055D55294E8F46A108E8 /* ru.lproj in Resources */,
+				6FD57A9390734BFB0949417ECCCB7AEC /* sv.lproj in Resources */,
+				3A092E87C33AEFE16AA5784AC08BA9E9 /* th.lproj in Resources */,
+				2CE19EB59E7F5B2A8EEBEB7A5EA126A2 /* tr.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65699E082BDC3BFD9A0D31D42D485749 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65ACE282418027E1EAC0F5BBCD97EC63 /* InAppSettingsKit.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		3C87DD49BE80BCE80E4D54AB3FBA2800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9BF447D01F1EFE26399EE6319604B61 /* IASKAppSettingsViewController.m in Sources */,
+				538E3D762166B71A00202E68057991DA /* IASKAppSettingsWebViewController.m in Sources */,
+				381A429E9CC6979A1CDF662742C62475 /* IASKMultipleValueSelection.m in Sources */,
+				551267314E4B8236E9166BB48BE68B36 /* IASKPSSliderSpecifierViewCell.m in Sources */,
+				F4061D80566952A4FD3E087EC0E27713 /* IASKPSTextFieldSpecifierViewCell.m in Sources */,
+				8E1280CE142EAE5FCCA8A68326F43F8E /* IASKSettingsReader.m in Sources */,
+				6315ADF2F7932752D872413E2C38603D /* IASKSettingsStore.m in Sources */,
+				66CC8DB497CFF35475C0BD0A0C6268B2 /* IASKSettingsStoreFile.m in Sources */,
+				E902BA7E78980241CB2349B329BDCCEC /* IASKSettingsStoreUserDefaults.m in Sources */,
+				9F76E28C973A31CBC3855AA11AC2EA98 /* IASKSlider.m in Sources */,
+				DB6257CDA73706A0690D2C15AB82ACA1 /* IASKSpecifier.m in Sources */,
+				84CF25B1937F8F0419B1648EE39227A5 /* IASKSpecifierValuesViewController.m in Sources */,
+				72109CC4E319106450B8B2E62A7023E3 /* IASKSwitch.m in Sources */,
+				FCC4E4649FD3B25F953561FE9A77FA02 /* IASKTextField.m in Sources */,
+				2367272FB729F671F3842C6FA7C390ED /* IASKTextView.m in Sources */,
+				F4DE15FF1336171363D8808DF3FABE72 /* IASKTextViewCell.m in Sources */,
+				1640FC74A0ACE1D703B9A7738860A064 /* InAppSettingsKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6B59307687557A05B2C731F106D06CF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -306,29 +654,80 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB5349BCA526376511C5C018B2C9DF48 /* Sources */ = {
+		6F3A140CA594AED3FF647C3EA0FF4195 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A60B653328DD9B1BB86F1E9A8F26D09B /* Pods-PicDMC-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3D1C25B48EAF54FABFE089AEDDE47E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4C7F8E25C617E0C12CBD7BA6011DC7F /* Pods-PicDMC-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		793DF7F32F319AA8B4CBDE9234582EE3 /* PBXTargetDependency */ = {
+		0FDB4338D1C101201E63A2BC7B44B2D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ForecastIO;
 			target = 3F19738396425B89322D95E08B55C21F /* ForecastIO */;
-			targetProxy = B51F9C752018C341011C024EDBEC9E3D /* PBXContainerItemProxy */;
+			targetProxy = A786910E8CD895BA8D7441877F491954 /* PBXContainerItemProxy */;
+		};
+		8B85A75C95D945DF6A59FFBD01F86445 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "InAppSettingsKit-InAppSettingsKit";
+			target = FA416ED70FC7E091F479F65D981FE8FC /* InAppSettingsKit-InAppSettingsKit */;
+			targetProxy = FBE0D4BA15D301BB7ADD8451BC93EAA7 /* PBXContainerItemProxy */;
+		};
+		BD6AE111EC4C78FC0D349F8C5FDE2B2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = InAppSettingsKit;
+			target = 8CB67190F0A60F7A033A3E515965C86F /* InAppSettingsKit */;
+			targetProxy = 0C4F56D9748838D116D9392586335341 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		010146CF13430473472C3D6D701F8A59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16F6135CDE1C2F953B47F41EE5850DA7 /* InAppSettingsKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/InAppSettingsKit";
+				INFOPLIST_FILE = "Target Support Files/InAppSettingsKit/ResourceBundle-InAppSettingsKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = InAppSettingsKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		01511D4C904DDFEC654E4C2409EF0BF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16F6135CDE1C2F953B47F41EE5850DA7 /* InAppSettingsKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/InAppSettingsKit";
+				INFOPLIST_FILE = "Target Support Files/InAppSettingsKit/ResourceBundle-InAppSettingsKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = InAppSettingsKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		17A567F99285E6B4C72796673573856B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB67E773D560688198A693FEDF007EFF /* ForecastIO.xcconfig */;
+			baseConfigurationReference = 1AEF86E61C9008F40B8DBBA1118F3481 /* ForecastIO.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -350,6 +749,36 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5EDE7F0D3EFD58E4FBFB55F3EF923D5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16F6135CDE1C2F953B47F41EE5850DA7 /* InAppSettingsKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/InAppSettingsKit/InAppSettingsKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/InAppSettingsKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/InAppSettingsKit/InAppSettingsKit.modulemap";
+				PRODUCT_NAME = InAppSettingsKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -408,13 +837,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
 		8700844F29C858721E2EFA7AB32A2D63 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB67E773D560688198A693FEDF007EFF /* ForecastIO.xcconfig */;
+			baseConfigurationReference = 1AEF86E61C9008F40B8DBBA1118F3481 /* ForecastIO.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -504,41 +934,7 @@
 			};
 			name = Debug;
 		};
-		B9D2093E6F30A7D16DF3FFA3845B61FE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FCEA0C40760C909DFB941C4FD1FBCB4 /* Pods-PicDMC.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-PicDMC/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PicDMC/Pods-PicDMC.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_PicDMC;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F6B51C3A3CEC05EAB3009FA76DFB96DF /* Debug */ = {
+		E36044690EC68F32B6586B8E5542F8CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1EC562CEDFFB7EFC6B5DA77E24FB7F31 /* Pods-PicDMC.debug.xcconfig */;
 			buildSettings = {
@@ -572,6 +968,71 @@
 			};
 			name = Debug;
 		};
+		EAA5C89BCFDD86317C22A8ACC1B6533D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16F6135CDE1C2F953B47F41EE5850DA7 /* InAppSettingsKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/InAppSettingsKit/InAppSettingsKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/InAppSettingsKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/InAppSettingsKit/InAppSettingsKit.modulemap";
+				PRODUCT_NAME = InAppSettingsKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F0AB119560C29DF4D2FB634BEBC0A888 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FCEA0C40760C909DFB941C4FD1FBCB4 /* Pods-PicDMC.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PicDMC/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PicDMC/Pods-PicDMC.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PicDMC;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -584,11 +1045,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		60B882322A1084EFD6D623FB5437257A /* Build configuration list for PBXNativeTarget "Pods-PicDMC" */ = {
+		2FCBF93EF98B1125037222020E826711 /* Build configuration list for PBXNativeTarget "Pods-PicDMC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F6B51C3A3CEC05EAB3009FA76DFB96DF /* Debug */,
-				B9D2093E6F30A7D16DF3FFA3845B61FE /* Release */,
+				E36044690EC68F32B6586B8E5542F8CC /* Debug */,
+				F0AB119560C29DF4D2FB634BEBC0A888 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB8ABE9ED4D3D80444381D9DFFA319CF /* Build configuration list for PBXNativeTarget "InAppSettingsKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EDE7F0D3EFD58E4FBFB55F3EF923D5A /* Debug */,
+				EAA5C89BCFDD86317C22A8ACC1B6533D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5C6AB672F1E8A23C8B317127FB1353C /* Build configuration list for PBXNativeTarget "InAppSettingsKit-InAppSettingsKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				010146CF13430473472C3D6D701F8A59 /* Debug */,
+				01511D4C904DDFEC654E4C2409EF0BF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
