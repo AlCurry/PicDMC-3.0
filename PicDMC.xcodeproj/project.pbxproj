@@ -10,8 +10,8 @@
 		0D26C4ED1FB3C85D00A59E53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D26C4EC1FB3C85D00A59E53 /* AppDelegate.swift */; };
 		0D26C4EF1FB3C85D00A59E53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D26C4EE1FB3C85D00A59E53 /* ViewController.swift */; };
 		0D26C4F21FB3C85D00A59E53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D26C4F01FB3C85D00A59E53 /* Main.storyboard */; };
-		0D26C4F41FB3C85D00A59E53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D26C4F31FB3C85D00A59E53 /* Assets.xcassets */; };
-		0D26C4F71FB3C85D00A59E53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D26C4F51FB3C85D00A59E53 /* LaunchScreen.storyboard */; };
+		562091BA1FD848EB00A331D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 562091B91FD848EB00A331D9 /* Assets.xcassets */; };
+		562091BC1FD8503500A331D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562091BB1FD8503500A331D9 /* LaunchScreen.storyboard */; };
 		568789F91FB9074600B93E23 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568789F81FB9073A00B93E23 /* CoreLocation.framework */; };
 		56A5E2C11FBCD1C0006D16A4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A5E2C01FBCD1B4006D16A4 /* MapKit.framework */; };
 		56A5E2C31FBCDF13006D16A4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A5E2C21FBCDF13006D16A4 /* MapViewController.swift */; };
@@ -25,11 +25,11 @@
 		0D26C4EC1FB3C85D00A59E53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D26C4EE1FB3C85D00A59E53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0D26C4F11FB3C85D00A59E53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0D26C4F31FB3C85D00A59E53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0D26C4F61FB3C85D00A59E53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D26C4F81FB3C85D00A59E53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C47E27F49DA413ABD5DAA48 /* Pods_PicDMC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PicDMC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		478DA350B7BB77745F9EE511 /* Pods-PicDMC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicDMC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PicDMC/Pods-PicDMC.debug.xcconfig"; sourceTree = "<group>"; };
+		562091B91FD848EB00A331D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		562091BB1FD8503500A331D9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		568789F81FB9073A00B93E23 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		56A5E2C01FBCD1B4006D16A4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		56A5E2C21FBCDF13006D16A4 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -92,8 +92,8 @@
 				0D26C4EE1FB3C85D00A59E53 /* ViewController.swift */,
 				56A5E2C41FBD1DD6006D16A4 /* PhotoViewController.swift */,
 				0D26C4F01FB3C85D00A59E53 /* Main.storyboard */,
-				0D26C4F31FB3C85D00A59E53 /* Assets.xcassets */,
-				0D26C4F51FB3C85D00A59E53 /* LaunchScreen.storyboard */,
+				562091B91FD848EB00A331D9 /* Assets.xcassets */,
+				562091BB1FD8503500A331D9 /* LaunchScreen.storyboard */,
 				0D26C4F81FB3C85D00A59E53 /* Info.plist */,
 				56C7F05C1FC0879D00361BB1 /* Settings.bundle */,
 			);
@@ -175,9 +175,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				562091BA1FD848EB00A331D9 /* Assets.xcassets in Resources */,
+				562091BC1FD8503500A331D9 /* LaunchScreen.storyboard in Resources */,
 				56C7F05D1FC0879D00361BB1 /* Settings.bundle in Resources */,
-				0D26C4F71FB3C85D00A59E53 /* LaunchScreen.storyboard in Resources */,
-				0D26C4F41FB3C85D00A59E53 /* Assets.xcassets in Resources */,
 				0D26C4F21FB3C85D00A59E53 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,9 +191,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PicDMC/Pods-PicDMC-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -226,10 +229,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PicDMC/Pods-PicDMC-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ForecastIO/ForecastIO.framework",
+				"${BUILT_PRODUCTS_DIR}/InAppSettingsKit/InAppSettingsKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ForecastIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InAppSettingsKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -259,14 +264,6 @@
 				0D26C4F11FB3C85D00A59E53 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0D26C4F51FB3C85D00A59E53 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0D26C4F61FB3C85D00A59E53 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -382,6 +379,7 @@
 			baseConfigurationReference = 478DA350B7BB77745F9EE511 /* Pods-PicDMC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = VGNUX9284N;
 				INFOPLIST_FILE = PicDMC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -389,6 +387,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -397,6 +396,7 @@
 			baseConfigurationReference = CE4F46B380285A15AC852923 /* Pods-PicDMC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = VGNUX9284N;
 				INFOPLIST_FILE = PicDMC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -404,6 +404,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
