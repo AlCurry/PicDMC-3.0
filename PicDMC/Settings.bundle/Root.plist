@@ -16,6 +16,26 @@
 			<key>Type</key>
 			<string>PSMultiValueSpecifier</string>
 			<key>Title</key>
+			<string>Labels</string>
+			<key>Key</key>
+			<string>user_label</string>
+			<key>DefaultValue</key>
+			<string>yes</string>
+			<key>Titles</key>
+			<array>
+				<string>yes</string>
+				<string>no</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>yes</string>
+				<string>no</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
 			<string>Font Color</string>
 			<key>Key</key>
 			<string>user_font_color</string>

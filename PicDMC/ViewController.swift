@@ -11,8 +11,14 @@ import ForecastIO
 import CoreLocation
 
 extension UserDefaults {
-    var measure : String {
+    static var measure : String {
         return UserDefaults().string(forKey: "user_measure") ?? ""
+    }
+    static var font_color : String {
+        return UserDefaults().string(forKey: "user_font_color") ?? ""
+    }
+    static var labels : String {
+        return UserDefaults().string(forKey: "user_label") ?? ""
     }
 }
 
@@ -27,12 +33,11 @@ class ViewController: UIViewController, UINavigationControllerDelegate, CLLocati
     var picLat: Double = 0.0
     var picLong: Double = 0.0
     var picImage: UIImage!
+    var picCreationDate : Date?
+    var picDescription : String!
     
     var pAddress : String = ""
     var pDistanceMiles : Double = 0.0
-    
-    var measure = UserDefaults.standard.measure
-    var font_color = UserDefaults().string(forKey: "user_font_color") ?? ""
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var tempLabel: UILabel!
@@ -44,6 +49,11 @@ class ViewController: UIViewController, UINavigationControllerDelegate, CLLocati
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+        self.tempLabel.text = ""
+        self.distanceLabel.text = ""
+        self.timeLabel.text = ""
+        self.addressLabel.text = ""
         
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest
@@ -79,16 +89,9 @@ class ViewController: UIViewController, UINavigationControllerDelegate, CLLocati
         
         let location = locations[0]
         
-        //print("lat : ", location.coordinate.latitude)
-        //print("long : ", location.coordinate.longitude)
-        //print("alt : ", location.altitude)
-        
         currentLatitude = location.coordinate.latitude
         currentLongitude = location.coordinate.longitude
         
-        // Is this a suitable place to get these values again, rather than restarting the app ?
-        measure = UserDefaults().string(forKey: "user_measure") ?? ""
-        font_color = UserDefaults().string(forKey: "user_font_color") ?? ""
     }
     
     func getAddress(point location: CLLocation, completion: @escaping (_ address: String?) -> ()) {
@@ -97,6 +100,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, CLLocati
         //let loc: CLLocation = CLLocation(latitude:picLat, longitude: picLong)
         
         var address : String = String()
+        var shortAddress : String = String()
         ceo.reverseGeocodeLocation(location, completionHandler:
             {(placemarks, error) in
                 if (error != nil)
@@ -107,18 +111,17 @@ class ViewController: UIViewController, UINavigationControllerDelegate, CLLocati
                 
                 if pm.count > 0 {
                     let pm = placemarks![0]
-                    
+                    /*
                      print(pm.country)
                      print(pm.locality)
                      print(pm.subLocality)
                      print(pm.thoroughfare)
                      print(pm.postalCode)
                      print(pm.subThoroughfare)
- 
-                    
-                    
+                    */
                     if pm.subLocality != nil {
                         address = address + pm.subLocality! + ", "
+                        shortAddress = shortAddress + pm.subLocality! + ", "
                     }
                     if pm.subThoroughfare != nil {
                         address = address + pm.subThoroughfare! + " "
@@ -130,16 +133,20 @@ class ViewController: UIViewController, UINavigationControllerDelegate, CLLocati
                         address = address + pm.locality! + ", "
                     }
                     if pm.country != nil {
-                        address = address + pm.country! + ", "
+                        address = address + pm.country!
+                        shortAddress = shortAddress + pm.country!
                     }
                     if pm.postalCode != nil {
-                        address = address + pm.postalCode! + " "
+                        address = address + ", " + pm.postalCode! + " "
+                        shortAddress = shortAddress + ", " + pm.postalCode! + " "
                     }
                     
                     //print(address)
                 }
                 completion(address)
                 self.pAddress = address
+                self.picDescription = shortAddress
+                print("short addr: ", shortAddress)
         })
     }
     
@@ -167,31 +174,42 @@ class ViewController: UIViewController, UINavigationControllerDelegate, CLLocati
                 fatalError()
             }
             photoViewController.picImage = picImage
+            photoViewController.picCreationDate = picCreationDate // ?? nil
+            photoViewController.picDescription = picDescription
+
         }
     }
     
     
     func updateForForecast(forecast: Forecast) {
+        
         let currentTemp = forecast.currently?.temperature
-        let intTemp = measure == "metric" ? getCelsius(forTemp: currentTemp!) : Int(currentTemp!)
-        //print("temperature at location:", intTemp)
+
+        let intTemp = UserDefaults.measure == "metric" ? getCelsius(forTemp: currentTemp!) : Int(currentTemp!)
         let summary = (forecast.currently?.summary ?? "").lowercased()
+        
         let coordinate0 = CLLocation(latitude: self.currentLatitude, longitude: self.currentLongitude)
         let coordinate1 = CLLocation(latitude: CLLocationDegrees(self.picLat), longitude: CLLocationDegrees(self.picLong))
-        print("lat : ", self.picLat)
-        print("long : ", self.picLong)
+        
         self.getAddress(point: coordinate1) { (address:String?) in
             //print("address ", address ?? "")
             print(self.timeAtPlace(time: (forecast.currently?.time)!, timezone: forecast.timezone))
             let convertedTime = self.timeAtPlace(time: (forecast.currently?.time)!, timezone: forecast.timezone)
             DispatchQueue.main.async(execute: {
 
-                self.setFontColor(color: self.font_color)
-                self.tempLabel.text = "weather now  \(summary) \(intTemp)"
+                self.setFontColor(color: UserDefaults.font_color)
+                
+                if (UserDefaults.labels != "no") {
+                    self.tempLabel.text = "weather now  \(summary) \(intTemp)"
+                    self.timeLabel.text = "time \(convertedTime)"
+                    self.addressLabel.text = "address \n\(address!)"
+                } else {
+                    self.tempLabel.text = "\(summary) \(intTemp)"
+                    self.timeLabel.text = "\(convertedTime)"
+                    self.addressLabel.text = "\(address!)"
+                }
+                
                 self.distanceLabel.text = self.distanceBetween(point1: coordinate0, point2: coordinate1)
-                self.timeLabel.text = "time \(convertedTime)"
-                self.addressLabel.text = "address \n\(address!)"
-
             })
         }
     }
@@ -206,6 +224,8 @@ extension ViewController: UIImagePickerControllerDelegate {
         
         picLat = 0.0
         picLong = 0.0
+        self.navigationItem.rightBarButtonItems?[1].isEnabled = true
+        
         if let url = info["UIImagePickerControllerReferenceURL"] as? URL {
             let assets = PHAsset.fetchAssets(withALAssetURLs: [url], options: nil)
             if let asset = assets.firstObject, let location = asset.location, let creationDate = asset.creationDate {
@@ -213,6 +233,7 @@ extension ViewController: UIImagePickerControllerDelegate {
                 print("creationDate : ", creationDate)
                 picLat = location.coordinate.latitude
                 picLong = location.coordinate.longitude
+                picCreationDate = creationDate
                 client.getForecast(latitude: picLat,
                                    longitude: picLong,
                                    completion: { (result:Result<Forecast>) in
@@ -221,8 +242,8 @@ extension ViewController: UIImagePickerControllerDelegate {
                                     }
                 })
             }
-            //print("picLat :", picLat)
-            //print("picLong :", picLong)
+            print("picLat :", picLat)
+            print("picLong :", picLong)
             
             picker.dismiss(animated: true, completion: nil)
             
@@ -231,6 +252,11 @@ extension ViewController: UIImagePickerControllerDelegate {
                 self.tempLabel.text = ""
                 self.distanceLabel.text = ""
                 self.timeLabel.text = ""
+                picCreationDate = nil
+                picDescription = ""
+                
+                // disable map option since latitude and longitude are 0 in this case
+                self.navigationItem.rightBarButtonItems?[1].isEnabled = false
             }
         }
     }
@@ -249,25 +275,28 @@ extension ViewController: UIImagePickerControllerDelegate {
         //print("EXT distance  in km : ", distanceInMeters/1000)
         //print("EXT distance in miles : ", round(distanceInMiles) )
         
-        if (measure == "metric") {
+        if (UserDefaults.measure == "metric") {
             if (distanceInMeters < 1000) {
                 print("meters: ", distanceInMeters)
                 let intMDistance = Int(round(distanceInMeters))
-                distanceString = "distance \(intMDistance) meters"
+                distanceString = "\(intMDistance) meters"
             } else {
                 let intKmDistance = Int(round(distanceInMeters / 1000))
-                distanceString = "distance \(intKmDistance) km"
+                distanceString = "\(intKmDistance) km"
             }
         } else {  // if not metric, assume imperial (miles/feet)
             if (distanceInMiles < 1) {
                 let intFeetDistance = Int(round(distanceInMiles * 5280))
-                distanceString = "distance \(intFeetDistance) feet"
+                distanceString = "\(intFeetDistance) feet"
             } else {
                 let intMileDistance = Int(round(distanceInMiles))
-                distanceString = "distance \(intMileDistance) miles"
+                distanceString = "\(intMileDistance) miles"
             }
         }
 
+        if (UserDefaults.labels != "no") {
+            distanceString = "distance " + distanceString
+        }
         return distanceString
     }
     
@@ -279,9 +308,7 @@ extension ViewController: UIImagePickerControllerDelegate {
         dateFormatter.timeZone = TimeZone(identifier: timezone)
         dateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
         let convertedTime = dateFormatter.string(from: Date())
-        
-        //print("EXT convertedDate (time at \(timezone))", convertedTime)
-        
+
         return convertedTime
     }
     
@@ -294,11 +321,9 @@ extension ViewController: UIImagePickerControllerDelegate {
         return Int(round(celsius))
     }
     
-    // inquire in class if this is the best approach - it works, but seems like there should be a cleaner option
-    // such as setting all text colors with the string value
     func setFontColor(color: String)  {
         
-        if (self.font_color == "black") {
+        if (color == "black") {
             self.tempLabel.textColor = UIColor.black
             self.distanceLabel.textColor = UIColor.black
             self.timeLabel.textColor = UIColor.black
