@@ -38,6 +38,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, CLLocati
     
     var pAddress : String = ""
     var pDistanceMiles : Double = 0.0
+    var locationStatus : CLAuthorizationStatus = CLLocationManager.authorizationStatus()
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var tempLabel: UILabel!
@@ -45,11 +46,14 @@ class ViewController: UIViewController, UINavigationControllerDelegate, CLLocati
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     
-    let client = DarkSkyClient(apiKey: "662e626026f320de24eda9df36ec7d01")
+    let client = DarkSkyClient(apiKey: "d9a4e20d3e3238764b6fadd3fd8ed679")
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+     
+        // default location for these prompts seemed too late, after a photo was picked, this function displays them occur earlier
+        checkAuthorizations()
+        
         self.tempLabel.text = ""
         self.distanceLabel.text = ""
         self.timeLabel.text = ""
@@ -60,6 +64,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, CLLocati
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
         
+        // default location for these prompts seemed too late, after a photo was picked, this function displays them occur earlier
+        // checkAuthorizations()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -69,8 +75,25 @@ class ViewController: UIViewController, UINavigationControllerDelegate, CLLocati
             push()
             havePushedImageVC = true
         }
+
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+      
+        // print("viewWillAppear : ", pAddress)
+       
+        if pAddress != "" {
+            client.getForecast(latitude: picLat,
+                               longitude: picLong,
+                               completion: { (result:Result<Forecast>) in
+                                if let f = result.value.0 {
+                                    self.updateForForecast(forecast: f)
+                                }
+            })
+        }
     
+
+    }
     @IBAction func barButtonTouchUpInside(_ sender: UIBarButtonItem) {
         push()
     }
@@ -82,9 +105,27 @@ class ViewController: UIViewController, UINavigationControllerDelegate, CLLocati
         // enable ImagePickerControl to support landscape mode
         viewController.modalPresentationStyle = .overCurrentContext
         
-        present(viewController, animated: true, completion: nil)
+       
+        present(viewController, animated: false, completion: nil)
     }
     
+    private func checkAuthorizations() {
+        
+        // checks to confirm access is allowed for photo library and location
+        
+        let photoLibStatus = PHPhotoLibrary.authorizationStatus()
+        
+        if (photoLibStatus != PHAuthorizationStatus.authorized) {
+           PHPhotoLibrary.requestAuthorization({ (newStatus) in })
+        }
+ 
+        let locationStatus = CLLocationManager.authorizationStatus()
+        
+        if (locationStatus != CLAuthorizationStatus.authorizedAlways) {
+            manager.requestWhenInUseAuthorization()
+        }
+        
+    }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         let location = locations[0]
@@ -160,13 +201,13 @@ class ViewController: UIViewController, UINavigationControllerDelegate, CLLocati
             mapViewController.photoLatitude = picLat
             mapViewController.photoLongitude = picLong
             mapViewController.photoAddress = pAddress
-            if (pDistanceMiles > 2000) {
+            /* if (pDistanceMiles > 2000) {
                mapViewController.photoSpan = 2.0
             } else if (pDistanceMiles > 10) {
                mapViewController.photoSpan = 0.1
             } else {
+            */
                mapViewController.photoSpan = 0.01
-            }
 
         }
         if segue.identifier == "to_photo" {
@@ -219,8 +260,8 @@ extension ViewController: UIImagePickerControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController,
                                didFinishPickingMediaWithInfo info: [String : Any]) {
         guard let image = info[UIImagePickerControllerOriginalImage] as? UIImage else { return }
-        imageView.image = image
-        picImage = image
+        //imageView.image = image
+        //picImage = image
         
         picLat = 0.0
         picLong = 0.0
@@ -228,9 +269,10 @@ extension ViewController: UIImagePickerControllerDelegate {
         
         if let url = info["UIImagePickerControllerReferenceURL"] as? URL {
             let assets = PHAsset.fetchAssets(withALAssetURLs: [url], options: nil)
+            imageView.image = image
+            picImage = image
             if let asset = assets.firstObject, let location = asset.location, let creationDate = asset.creationDate {
-                
-                print("creationDate : ", creationDate)
+
                 picLat = location.coordinate.latitude
                 picLong = location.coordinate.longitude
                 picCreationDate = creationDate
@@ -244,7 +286,7 @@ extension ViewController: UIImagePickerControllerDelegate {
             }
             print("picLat :", picLat)
             print("picLong :", picLong)
-            
+
             picker.dismiss(animated: true, completion: nil)
             
             if (picLat == 0.0 && picLong == 0.0) {
@@ -258,6 +300,7 @@ extension ViewController: UIImagePickerControllerDelegate {
                 // disable map option since latitude and longitude are 0 in this case
                 self.navigationItem.rightBarButtonItems?[1].isEnabled = false
             }
+            
         }
     }
     func distanceBetween(point1: CLLocation, point2: CLLocation) -> String {
