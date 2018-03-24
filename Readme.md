@@ -2,6 +2,8 @@
 ### In the app store for iphone and ipad, as of December 26, 2017
 #### final project for ios app development class at Noble Desktop, Soho, NYC - September - December 2017
 
+Screenshot .png files in this directory and in the app store.
+
 PicDMC is short for picture distance, map, (weather & time) conditions. The app uses the IOS 
 UIImagePickerController to allow the selection of a photo. Based on the photo’s meta data, 
 specifically gps latitude and longitude, it determines the user’s current distance from where 
